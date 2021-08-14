@@ -93,5 +93,110 @@
 
 // maxCharacter
 
+// // const maxChar = (str) => {
+// //   // let max = 0;
+// //   // let maxChar = '';
 
+// //   // str.split('').forEach((char) => {
+// //   //   if(str.split(char).length > max){
+// //   //     max = str.split(char).length - 1;
+// //   //     maxChar = char
+// //   //   }
+// //   // })
+// //   // return maxChar
+  
+// // }
 
+// // maxChar('javaScript') //a
+
+// const maxChar = (str) => {
+//   const charObj = {}
+//   let maxNum = 0;
+//   let maxChar = ''
+
+//   str.split('').forEach((char) => {
+//     if(charObj[char]){
+//       //addding each character into the character object
+//       charObj[char]++
+//     }
+//     else {
+//       charObj[char] = 1
+//     }
+
+//   })
+//   for(let key in charObj){
+//     if(charObj[key] > maxNum){
+//       maxNum = charObj[key];
+//       maxChar = key
+//     }
+//   }
+//   return maxChar
+// }
+
+// maxChar('javaScript') //a
+
+// const maxChar = (str) => {
+//   const charObj = {}
+//   let maxNum = 0;
+//   let maxChar = ''
+
+//   str.split('').forEach(char => {
+//     if(charObj[char]){
+//       charObj[char]++
+//     }else{
+//       charObj[char] = 1
+//     }
+//   })
+//   console.log(charObj)
+//   //loop over object to find key with highest value, store in variable
+//   for(let key in charObj){
+//     // console.log(key)
+//     if(charObj[key] > maxNum){
+//       maxNum = charObj[key];
+//       maxChar = key
+//     }
+//   }
+//   return maxChar
+// }
+
+// maxChar('abcabcccd') //a
+
+// const maxChar = (str) => {
+//   const strObj = {}
+//   let maxNum = 0;
+//   let maxChar = ''
+
+//   str.toLowerCase().split('').forEach(char => {
+//     if(strObj[char]){
+//       strObj[char]++
+//     }else{
+//       strObj[char] = 1
+//     }
+//   })
+//   console.log(strObj)
+//   for(let key in strObj){
+//     if(strObj[key] > maxNum){
+//       maxNum = strObj[key]
+//       maxChar = key
+//     }
+//   }
+//   return maxChar
+// }
+
+// maxChar('javaScssssript') //a
+
+// const maxChar = (str) => {
+//   let maxNum = 0;
+//   let maxChar = '';
+
+//   str.toLowerCase().split('').forEach(char =>{
+//     if(str.split(char).length > maxNum){
+//       maxNum = str.split(char).length - 1
+//       maxChar = char
+//     }
+//   })
+//   return maxChar
+  
+// }
+
+// maxChar('javaSssscript') //a
